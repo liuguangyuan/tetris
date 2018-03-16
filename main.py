@@ -33,14 +33,14 @@ if __name__ == '__main__':
         if not curr_actor:
             curr_actor = reserve_actor
             reserve_actor = get_actor(col)
-            show('next', reserve_actor.get_img(), 200, 0)
+            show('next actor', reserve_actor.get_img(), 200, 0)
             tmp_bg = bg.add(curr_actor)
-        show('img', tmp_bg.get_img(), 500, 0)
-        print '****************'
-        print 'score:', score
-        print 'time: ', time.time() - begin_time
-        print '****************'
-        print
+        show('tetris', tmp_bg.get_img(), 500, 0)
+        print('****************')
+        print('score:', score)
+        print('time: ', time.time() - begin_time)
+        print('****************')
+        print('')
 
         c = cv2.waitKey(1000)
         if c == 27:
